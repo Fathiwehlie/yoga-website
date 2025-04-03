@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: "Anybody", sans-serif;
+    background-color: #dfdfd8;
+}
+
+.containers{
+    width: min(70%,1020px);
+    margin:0 auto;
+    margin-bottom: 5rem;
+}
+
+header{ 
+    position: relative;
+    background-color: #fafaf6;
+    height: 4.5rem;  
+    
+}
+
+.desktop-menu{
+   
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem ;
+    padding: 10px;
+    
+}
+
+.desktop-menu .menus-link{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.desktop-menu h1{
+    color: #2b2b2b;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    /* line-height: 1.5625rem ; */
+}
+.desktop-menu h1:hover{
+    color: black;
+}
+.desktop-menu .menus-link li a{
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 1.25rem;
+    font-weight: 400;
+    /* line-height:1.625rem ; */ 
+}
+.desktop-menu .menus-link li a:hover{
+    color: #5f6ad4;
+}
+.hamburger{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.hero{
+    background: linear-gradient(rgba(249, 249, 249, 0.1),rgba(255, 255, 255, 0.1))
+    ,url('https://images.pexels.com/photos/1234035/pexels-photo-1234035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center center/cover no-repeat;
+    height: calc(100vh - 4.5rem);
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem ;
+}
+.hero h1{
+    font-size: 4rem;
+    /* line-height: 5rem; */
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn{
+    background-color: #5f6ad4;
+    color: white;
+    padding:1rem  3.75rem ;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.btn-learn-more:hover{
+    background-color: #dfdfd8;
+    transition: 0.3s ease-in-out;
+    color: #2b2b2b;
+}
+
+.yoga{
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url('https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center/cover no-repeat;
+    border-radius: 1.5rem;
+    margin-top: 5rem;
+   
+}
+
+.contents {
+    width: 728px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 1rem;
+    color: #e7e7e4;
+    font-weight: 700;
+    margin-bottom: 6rem;
+}
+
+.contents h2{
+    font-size: 3.125rem;
+    line-height: 3.125rem;  
+}
+
+.contents p{
+
+    font-size: 1.5625rem;
+    line-height: 2rem;   
+}
+
+.blogs{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+
+}
+
+.blog{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-content: flex-start;
+}
+
+.blog-img{
+    width: 100%;
+    height: 300px;
+    
+    border-radius: 1rem;
+
+}
+.image1{
+
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg') center center/cover no-repeat;
+
+}
+
+.image2{
+
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2985098.jpg') center center/cover no-repeat;
+
+}
+
+.image3{
+
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-thiago-2410573.jpg') center center/cover no-repeat;
+
+}
+
+.image4{
+
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-oluremi-adebayo-2908176.jpg') center center/cover no-repeat;
+
+}
+
+
+
+
+.blog h5{
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.blog h6{
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    color: #646464;
+}
+.blog button{
+    width: 10rem;
+    height: 3.75rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    background-color: #5f6ad4;
+    border: none;
+    padding: 0.3125rem 0.1875rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+
+.blog button:hover{
+    background-color: #cecec1;
+    transition: 0.3s ease-in-out;
+    color: #2b2b2b;
+}
+
+
+.perfect-condition{
+
+   height: 400px;
+   background: linear-gradient(rgba(228, 225, 225, 0.5),rgba(174, 171, 171, 0.5)),url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpeg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-block: 15rem;
+    background-attachment:fixed ;
+
+}
+
+
+.perfect-condition h3,.perfect-condition p{
+    font-weight: 400;
+    color: #2a2a2a;
+    
+ 
+}
+.perfect-condition h3{
+    font-size: 50px;
+    line-height: 50px;
+    
+    
+   
+    
+}
+
+.perfect-condition p{
+    font-size: 20px;
+    line-height: 32px;
+    
+}
+
+.life{
+   
+    
+    margin-top: 5rem;
+    
+}
+
+.life-yoga{
+    font-size: 50px;
+    line-height: 50px;
+    color: #2a2a2a;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.img{
+    width: 90vw;
+    height: 40.375rem;
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg') center center/cover no-repeat;
+    /* margin: 6rem; */
+    margin-inline: auto;
+    border-radius: 2rem;
+}
+
+
+.bloges {
+    display: grid;
+    grid-template-columns: repeat(3,360px);
+    grid-template-rows: 600px;
+    margin-top: 5rem;
+    gap: 3rem;
+    
+    
+    
+}
+
+.bolg-section{
+    margin-top: 5rem;
+    display: block;
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    font-weight: 400;
+    color: #2a2a2a;
+    /* margin-top: 1rem; */
+    text-align: center;
+}
+
+.bloges .blog{
+    /* background-color: #2a2a2a; */
+    margin:0 ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+    
+}
+
+
+
+    .image5{
+        
+        height: 22.5rem;
+    
+        background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpg') center center/cover no-repeat;
+    
+    }
+
+
+    .image6{
+        height: 360px;
+        background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-rfstudio-3820430.jpeg') center center/cover no-repeat;
+    
+    }
+
+
+    .image7{
+        height: 360px;
+        background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-natalie-3759660.jpg') center center/cover no-repeat;
+    
+    }
+
+    .bloges .blog button{
+        width: 280px !important;
+    }
+
+
+
+    .yoga-classes{
+        width: 100vw;
+        height: 355px;
+        background: linear-gradient(rgba(46, 44, 44, 0.5),rgba(36, 35, 35, 0.5)),url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2985098.jpg') center center/cover no-repeat;
+         display: flex;
+         justify-content:center;
+         align-items:center;
+     
+     }
+
+     .yoga-box{
+        height: 50%;
+        background-color:#cacac4;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 1rem;
+        border: 2px solid #5f6ad4;
+        /* margin-inline: auto; */
+
+     }
+
+     .yoga-box h3{
+        width:  428.333px;
+        font-size: 1.5625rem;
+        line-height: 2rem;
+        font-weight: 400;
+     }
+
+     .yoga-box .btn{
+        align-items: self-start;
+     }
+
+     footer{
+        width: 100vw !important;
+        background-color: #232323;
+     }
+
+     .footer{
+        width:72.5rem;
+        background: transparent;
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1.6875rem;
+        font-weight: 400;
+        color: #efefec;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:680px){
+
+    header{
+        height: 0;
+    }
+
+    i{
+        z-index: 1111;
+        /* position: fixed; */
+    
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: #5f6ad4;
+        color:#fafaf6 ;
+        border-radius: 50%;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+
+        
+        
+
+    }
+    .navigation{
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        /* justify-content: center; */
+        align-items: center;
+        width: 80%;
+    }
+    .mobile-menu{
+        display: flex;
+        background-color: #2b2b2b;
+        position: fixed;
+        inset: 0 0 0 0;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+        
+    
+    }
+
+    .mobile-menu[data-visible="false"] {
+
+        transform: translateX(0%);
+
+    }
+
+
+    .hamburger i[data-visible="true"]{
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"]{
+        display: none;
+    }
+ 
+      
+
+
+
+    .menus-link{
+    
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        
+    
+    
+    }
+
+    .mobile-menu h1, .menus-link li a{
+        
+            text-decoration: none;
+            color:white;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height:1.625rem ;
+            
+       
+    }
+
+    .mobile-menu h1{
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        border-bottom:1px solid #dfdfd8;
+        padding: 2rem;
+
+    }
+
+
+    .book-room,.write-us{
+        
+        
+        color: #fafaf6;
+        padding: 0.75rem 2.1875rem;
+        font-size: 1.5rem;
+        line-height: 1.8125rem;
+        
+        border-radius: 0.5rem;
+
+    }
+
+    .mobile-menu-action{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+    .book-room{
+        border: none;
+        background-color: #5f6ad4;
+
+    }
+
+ .write-us:hover,.book-room:hover{
+        background-color: #dfdfd8;
+        color: #2b2b2b;
+    }
+
+    .write-us{
+        background: transparent;
+        border: 0.125rem solid #dfdfd8;
+
+    }
+
+
+
+    .hero{
+        height: 100vh;
+        
+    }
+
+    .hero h1{
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+    .contents{
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contents h1{
+        font-size: 2rem;
+    }
+
+    .contents p{
+        font-size: 1.25rem;
+    }
+
+    @media (max-width:680px ){
+        .blogs{
+            grid-template-columns: 1fr;
+        }
+        
+    }
+
+   
+
+    .perfect-condition{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+
+   
+    .perfect-condition h3{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        
+ 
+        
+    }
+    
+    .perfect-condition p{
+        font-size: 16px;
+        line-height: 1rem;
+
+        
+    }
+
+
+    .bloges{
+        display: grid;
+        grid-template-columns:1fr;
+        
+       
+        gap: 3rem;
+        
+        
+        
+    }
+
+    .yoga-box{
+        max-width: 500px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .yoga-box h3{
+        width: 15.75rem !important;
+        font-size: 1rem;
+        line-height: 1.6875rem;
+        font-weight: 400;
+     }
+
+
+     .footer{
+        
+        width: 24.375rem !important;
+        font-size: 1.125rem;
+        line-height: 1.3125rem;
+        
+        margin: 0;
+
+     }
+    
+    
+
+
+
+
+
+    
+}
