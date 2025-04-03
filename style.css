@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem ;
+    gap: 1rem ;
     padding: 10px;
     
 }
@@ -39,13 +39,13 @@ header{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
 .desktop-menu h1{
     color: #2b2b2b;
-    font-size: 1.5625rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     /* line-height: 1.5625rem ; */
 }
 .desktop-menu h1:hover{
@@ -54,7 +54,7 @@ header{
 .desktop-menu .menus-link li a{
     text-decoration: none;
     color: #2b2b2b;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 400;
     /* line-height:1.625rem ; */ 
 }
